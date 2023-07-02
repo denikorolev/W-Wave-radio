@@ -13,29 +13,29 @@
 
    <div class="container container__header">
     <header class="header">
-        <img src="pic/logo.svg" alt="logo w-wave">
-        <div class="search">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <img class="header__logo" src="pic/logo.svg" alt="logo w-wave">
+        <button class="header__magnifier-wraper btn">
+            <svg class="header__magnifier" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-        </div>
+        </button>
         <nav class="nav">
             <ul class="header__list list-reset">
-                <li class="header__item">
-                    <a href="#podcasts">Подкасты</a>
+                <li class="header__item text-anim">
+                    <a class="header__link text-anim" href="#podcasts">Подкасты</a>
                 </li>
-                <li class="header__item">
-                    <a href="#shows">Передачи</a>
+                <li class="header__item text-anim">
+                    <a class="header__link text-anim" href="#shows">Передачи</a>
                 </li>
-                <li class="header__item">
-                    <a href="#guests">Гости</a>
+                <li class="header__item text-anim">
+                    <a class="header__link text-anim" href="#guests">Гости</a>
                 </li>
-                <li class="header__item">
-                    <a href="#playlists">Плейлисты</a>
+                <li class="header__item text-anim">
+                    <a class="header__link text-anim" href="#playlists">Плейлисты</a>
                 </li>
-                <li class="header__item">
-                    <a href="#aboutus">О нас</a>
+                <li class="header__item text-anim">
+                    <a class="header__link text-anim" href="#aboutus">О нас</a>
                 </li>
             </ul>
         </nav>
@@ -55,11 +55,17 @@
                 истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое 
                 другое:)
             </p>
-            <button class="btn hero__btn">Слушать эфир</button>
+            <button class="btn btn-purple hero__btn">Слушать эфир</button>
         </div>
         <div class="hero__right-box">
             <picture class="hero__picture">
-                <img src="pic/mic-big.png" alt="microphone">
+                <div class="hero__circle-big">
+                    <div class="hero__circle-medium">
+                        <div class="hero__circle-small">
+                            <img class="hero__mic" src="pic/mic-big.png" alt="microphone">
+                        </div>
+                    </div>
+                </div>
             </picture>
         </div>
     </section>
@@ -67,71 +73,71 @@
 
  <div class="container container__podcasts">
     <section id="podcasts" class="section section__podcasts">
-        <h2 class="section-title">Подкасты</h2>
+        <h2 class="section-title podcasts__title">Подкасты</h2>
         <ul class="podcasts__list list-reset">
-            <li class="podcasts__item">
-                <div class="podcasts__card">
+            <li class="podcasts__item hvr-grow-shadow">
+                <a href="#" class="podcasts__card podcasts__card_1 ">
                     <time class="podcasts__date" datetime="2023-06-14 15:43">14 июня</time>
                     <span class="podcasts__time">15:43</span>
                     <div class="podcasts__name">Европа. XIX век</div>
                     <div class="podcasts__author">Дмитрий Гутенберг</div>
-                </div>
+                </a>
             </li>
-            <li class="podcasts__item">
-                <div class="podcasts__card">
+            <li class="podcasts__item hvr-grow-shadow">
+                <a href="#" class="podcasts__card podcasts__card_2 ">
                     <time class="podcasts__date" datetime="2023-06-11 05:32">11 июня</time>
                     <span class="podcasts__time">5:32</span>
                     <div class="podcasts__name">О музыке</div>
                     <div class="podcasts__author">Дмитрий Гутенберг</div>
-                </div>
+                </a>
             </li>
-            <li class="podcasts__item">
-                <div class="podcasts__card">
+            <li class="podcasts__item hvr-grow-shadow">
+                <a href="#" class="podcasts__card podcasts__card_3 ">
                     <time class="podcasts__date" datetime="2023-06-08 08:54">8 июня</time>
                     <span class="podcasts__time">8:54</span>
                     <div class="podcasts__name">Люди сегодня</div>
                     <div class="podcasts__author">Анна Васильева</div>
-                </div>
+                </a>
             </li>
-            <li class="podcasts__item">
-                <div class="podcasts__card">
+            <li class="podcasts__item hvr-grow-shadow">
+                <a href="#" class="podcasts__card podcasts__card_4 ">
                     <time class="podcasts__date" datetime="2023-06-05 09:04">5 июня</time>
                     <span class="podcasts__time">9:04</span>
                     <div class="podcasts__name">Хэллоу, Африка!</div>
                     <div class="podcasts__author">Пётр Дмитриевский</div>
-                </div>
+                </a>
             </li>
-            <li class="podcasts__item">
-                <div class="podcasts__card">
+            <li class="podcasts__item hvr-grow-shadow">
+                <a href="#" class="podcasts__card podcasts__card_5 ">
                     <time class="podcasts__date" datetime="2023-06-02 07:03">2 июня</time>
                     <span class="podcasts__time">7:03</span>
                     <div class="podcasts__name">Обо всём</div>
                     <div class="podcasts__author">Пётр Дмитриевский</div>
-                </div>
+                </a>
             </li>
-            <li class="podcasts__item">
-                <div class="podcasts__card">
+            <li class="podcasts__item hvr-grow-shadow">
+                <a href="#" class="podcasts__card podcasts__card_6 ">
                     <time class="podcasts__date" datetime="2023-05-28 09:15">28 мая</time>
                     <span class="podcasts__time">9:15</span>
                     <div class="podcasts__name">Физика цвета</div>
                     <div class="podcasts__author">Татьяна Флеганова</div>
-                </div>
+                </a>
             </li>
-            <li class="podcasts__item">
-                <div class="podcasts__card">
+            <li class="podcasts__item hvr-grow-shadow">
+                <a href="#" class="podcasts__card podcasts__card_7 ">
                     <time class="podcasts__date" datetime="2023-05-22">22 мая</time>
                     <span class="podcasts__time">16:04</span>
                     <div class="podcasts__name">Источник звука</div>
                     <div class="podcasts__author">Пётр Дмитриевский</div>
-                </div>
+                </a>
             </li>
-            <li class="podcasts__item">
-                <div class="podcasts__card">
+            <li class="podcasts__item hvr-grow-shadow">
+                <a href="#" class="podcasts__card podcasts__card_8 ">
                     <time class="podcasts__date" datetime="2023-05-18 06:55">18 мая</time>
                     <span class="podcasts__time">6:55</span>
                     <div class="podcasts__name">Правила этикета</div>
                     <div class="podcasts__author">Татьяна Флеганова</div>
-                </div>
+                </a>
             </li>
         </ul>
     </section>
@@ -143,42 +149,96 @@
         <div class="shows__left-box">
             <h2 class="shows_title section-title">Передачи</h2>
             <div class="shows__button-wraper">
-                <img aria-hidden="true" src="pic/mic.png" alt="">
-                <button class="shows__btn btn">Архив</button>
+                <img class="shows__mic-image" aria-hidden="true" src="pic/mic.png" alt="mic">
+                <a href="#" class="shows__archive-link">Архив</a>
                 <p class="shows__descr">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)</p>
             </div>
         </div>
         <div class="shows__right-box">
             <ul class="shows__list list-reset">
-                <li class="shows__item shows__item_1">
-                    <h4 class="shows_cards-title section-subtitle">О людях и книгах</h4>
-                    <p class="shows__scheldure">Анонсируется отдельно</p>
-                    <a href="#" class="shows__link">Подробнее</a>
+                <li class="shows__item">
+                    <div class="shows__image shows__image_1"></div>
+                    <div class="shows__descr-wraper">
+                        <h4 class="shows_cards-title section-subtitle">О людях и книгах</h4>
+                        <p class="shows__scheldure">Анонсируется отдельно</p>
+                        <a href="#" class="shows__link text-anim">Подробнее
+                        <div class="shows__arrow">
+                            <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+                            </svg>
+                        </div>
+                        </a>
+                    </div>
                 </li>
-                <li class="shows__item shows__item_2">
-                    <h4 class="shows_cards-title section-subtitle">Графомания td</h4>
-                    <p class="shows__scheldure">По понедельникам в 10:00</p>
-                    <a href="#" class="shows__link">Подробнее</a>
+                <li class="shows__item">
+                    <div class="shows__image shows__image_2"></div>
+                   <div class="shows__descr-wraper">
+                        <h4 class="shows_cards-title section-subtitle">Графомания td</h4>
+                        <p class="shows__scheldure">По понедельникам в 10:00</p>
+                        <a href="#" class="shows__link text-anim">Подробнее
+                        <div class="shows__arrow">
+                            <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+                            </svg>
+                        </div>
+                        </a>
+                   </div>
                 </li>
-                <li class="shows__item shows__item_3">
-                    <h4 class="shows_cards-title section-subtitle">Не Рим, Не Троя</h4>
-                    <p class="shows__scheldure">По вторникам в 12:00</p>
-                    <a href="#" class="shows__link">Подробнее</a>
+                <li class="shows__item">
+                    <div class="shows__image shows__image_3"></div>
+                   <div class="shows__descr-wraper">
+                        <h4 class="shows_cards-title section-subtitle">Не Рим, Не Троя</h4>
+                        <p class="shows__scheldure">По вторникам в 12:00</p>
+                        <a href="#" class="shows__link text-anim">Подробнее
+                        <div class="shows__arrow">
+                            <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+                            </svg>
+                        </div>
+                        </a>
+                   </div>
                 </li>
-                <li class="shows__item shows__item_4">
-                    <h4 class="shows_cards-title section-subtitle">Эрудит</h4>
-                    <p class="shows__scheldure">По пятницам в 17:00</p>
-                    <a href="#" class="shows__link">Подробнее</a>
+                <li class="shows__item">
+                    <div class="shows__image shows__image_4"></div>
+                    <div class="shows__descr-wraper">
+                        <h4 class="shows_cards-title section-subtitle">Эрудит</h4>
+                        <p class="shows__scheldure">По пятницам в 17:00</p>
+                        <a href="#" class="shows__link text-anim">Подробнее
+                        <div class="shows__arrow">
+                            <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+                            </svg>
+                        </div>
+                        </a>
+                    </div>
                 </li>
-                <li class="shows__item shows__item_5">
-                    <h4 class="shows_cards-title section-subtitle">Тонкости эпох</h4>
-                    <p class="shows__scheldure">По субботам в 10:00</p>
-                    <a href="#" class="shows__link">Подробнее</a>
+                <li class="shows__item">
+                    <div class="shows__image shows__image_5"></div>
+                   <div class="shows__descr-wraper">
+                        <h4 class="shows_cards-title section-subtitle">Тонкости эпох</h4>
+                        <p class="shows__scheldure">По субботам в 10:00</p>
+                        <a href="#" class="shows__link text-anim">Подробнее
+                        <div class="shows__arrow">
+                            <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+                            </svg>
+                        </div>
+                        </a>
+                   </div>
                 </li>
-                <li class="shows__item shows__item_6">
-                    <h4 class="shows_cards-title section-subtitle">Живые мысли</h4>
-                    <p class="shows__scheldure">По воскресеньям в 15:30</p>
-                    <a href="#" class="shows__link">Подробнее</a>
+                <li class="shows__item">
+                    <div class="shows__image shows__image_6"></div>
+                    <div class="shows__descr-wraper">
+                        <h4 class="shows_cards-title section-subtitle">Живые мысли</h4>
+                        <p class="shows__scheldure">По воскресеньям в 15:30</p>
+                        <a href="#" class="shows__link text-anim">Подробнее
+                        <div class="shows__arrow">
+                            <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
+                            </svg>
+                        </div>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -198,12 +258,12 @@
                     <img src="pic/guests-Martinova.jpg" alt="foto of Olga Martinova">
                 </picture>
                 <div class="guests__right-box">
-                    <h3 class="section__subtitle guests__name">Ольга Мартынова</h3>
+                    <h3 class="section-subtitle guests__name">Ольга Мартынова</h3>
                     <p class="guests__descr">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат 
-                        культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность 
-                        как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.
+                    культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность 
+                    как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.
                     </p>
-                    <a href="#" class="guests__brodcast">Эфиры с гостем</a>
+                    <a href="#" class="guests__brodcast-link">Эфиры с гостем</a>
                 </div>
             </li>
             <li class="guests__item">
@@ -211,12 +271,12 @@
                     <img src="pic/guests-Grishin.jpg" alt="foto of Denis Grishin">
                 </picture>
                 <div class="guests__right-box">
-                    <h3 class="section__subtitle guests__name">Денис Гришин</h3>
+                    <h3 class="section-subtitle guests__name">Денис Гришин</h3>
                     <p class="guests__descr">Однозначно, элементы политического процесса являются только методом 
-                        политического участия и&nbsp;смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой 
-                        неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности.
+                    политического участия и&nbsp;смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой 
+                    неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности.
                     </p>
-                    <a href="#" class="guests__brodcast">Эфиры с гостем</a>
+                    <a href="#" class="guests__brodcast-link">Эфиры с гостем</a>
                 </div>
             </li>
             <li class="guests__item">
@@ -224,12 +284,12 @@
                     <img src="pic/guests-Martinova-with-long-hair.jpg" alt="foto of Olga Martinova">
                 </picture>
                 <div class="guests__right-box">
-                    <h3 class="section__subtitle guests__name">Ольга Мартынова</h3>
+                    <h3 class="section-subtitle guests__name">Ольга Мартынова</h3>
                     <p class="guests__descr">С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет 
-                        срочную потребность дальнейших направлений развития. В&nbsp;рамках спецификации современных 
-                        стандартов, реплицированные с&nbsp;зарубежных источников.
+                    срочную потребность дальнейших направлений развития. В&nbsp;рамках спецификации современных 
+                    стандартов, реплицированные с&nbsp;зарубежных источников.
                     </p>
-                    <a href="#" class="guests__brodcast">Эфиры с гостем</a>
+                    <a href="#" class="guests__brodcast-link">Эфиры с гостем</a>
                 </div>
             </li>
         </ul>
@@ -248,89 +308,125 @@
         </div>
         <div class="platlists__right-box">
             <ul class="playlists__list list-reset">
-                <li class="playlists__item">
-                    <img src="pic/ls-ploho.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                    <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-ploho.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_rus"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Ploho</h3>
                         <p class="playlists__descr">3 последних альбома</p>
                     </div>
+                    </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-molchat-doma.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                   <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-molchat-doma.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_rus"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Molchat Doma</h3>
                         <p class="playlists__descr">Все песни</p>
                     </div>
+                   </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-motorama.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                    <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-motorama.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_rus"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Motorama</h3>
                         <p class="playlists__descr">Все синглы</p>
                     </div>
+                    </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-human-tetris.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                    <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-human-tetris.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_rus"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Human Tetris</h3>
                         <p class="playlists__descr">3 последних альбома</p>
                     </div>
+                    </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-buerak.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                    <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-buerak.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_rus"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Буерак</h3>
                         <p class="playlists__descr">Все EP</p>
                     </div>
+                    </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-july-days.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                   <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-july-days.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_rus"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Июльские Дни</h3>
                         <p class="playlists__descr">Альбом «Колокол»</p>
                     </div>
+                   </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-joy-division.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                    <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-joy-division.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_eng"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Joy Division</h3>
                         <p class="playlists__descr">Лучшее за всё время</p>
                     </div>
+                    </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-the-cure.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                    <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-the-cure.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_eng"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">The Cure</h3>
                         <p class="playlists__descr">Лучшее за всё время</p>
                     </div>
+                    </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-the-smiths.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                   <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-the-smiths.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_eng"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">The Smiths</h3>
                         <p class="playlists__descr">Период 1984–1988</p>
                     </div>
+                   </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-new-order.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                    <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-new-order.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_eng"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">New Order</h3>
                         <p class="playlists__descr">Хиты</p>
                     </div>
+                    </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-bouhaus.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                   <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-bouhaus.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_eng"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Bauhaus</h3>
                         <p class="playlists__descr">Все синглы</p>
                     </div>
+                   </a>
                 </li>
-                <li class="playlists__item">
-                    <img src="pic/ls-gang-of-four.jpg" alt="groupe albume cover">
-                    <div class="playlists__descr-wraper">
+                <li class="playlists__item hvr-grow-shadow">
+                    <a class="playlists__card-link" href="#">
+                        <img class="playlists__img" src="pic/ls-gang-of-four.jpg" alt="groupe albume cover">
+                        <span class="playlists__flag playlists__flag_eng"></span>
+                        <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Gang Of Four</h3>
                         <p class="playlists__descr">3 последних альбома</p>
                     </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -341,11 +437,10 @@
     <section class="section section__shop">
         <picture class="shop__picture">
             <img src="pic/radio-merch.png" alt="old-school radio">
-            <img src="pic/flower-tag.svg" alt="price tag">
+            <img class="shop__tag" src="pic/flower-tag.svg" alt="price tag">
         </picture>
         <div class="shop__right-box">
             <h2 class="section-title shop__title">Будь с&nbsp;нами на&nbsp;одной волне!</h2>
-            <div class="shop__wave">xfggfhhjghjfgjgfjfgj</div>
             <p class="shop__descr">Друзья, рады представить вам продукт нашего производства! Да-да, несмотря 
                 на&nbsp;то, что мы&nbsp;только начали свой путь радиовещателей, нам хочется, чтобы вы&nbsp;могли 
                 как следует нас расслышать:)
@@ -356,7 +451,25 @@
                 но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!
             </p>
             <div class="shop__price">2 800 ₽</div>
-            <button class="btn shop__btn">Купить на Яндекс.Маркет</button>
+            <a href="#" class="shop__link">
+                <span class="shop__link-img">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Frame 158">
+                        <g clip-path="url(#clip0_95303_1520)">
+                        <path id="Vector" d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z" fill="var(--bronze-bright)"/>
+                        <path id="Vector_2" d="M17.4385 4.54391L13.7295 3.17676L8.3957 10.8637L8.92677 7.3751L6.02058 5.68219L0.67395 12.1141C0.924269 13.3858 1.4102 14.5718 2.08387 15.6239L5.27373 11.7711L4.09993 16.2962L7.73707 17.6271L13.1408 9.8464L11.9569 14.2958L14.9033 16.0179L20.558 10.3174C20.5592 10.2534 20.5599 10.1889 20.5599 10.1246C20.5599 8.78258 20.3017 7.50132 19.8329 6.32896L16.5482 9.6538L17.4385 4.54391Z" fill="var(--low-dark)"/>
+                        </g>
+                        </g>
+                        <defs>
+                        <clippath id="clip0_95303_1520">
+                        <rect x="0.5" width="20" height="20" rx="10" fill="white"/>
+                        </clippath>
+                        </defs>
+                        </svg>
+                </span>
+                <span class="shop__link-text">Купить на Яндекс.Маркет</span>
+
+            </a>
         </div>
 
     </section>
@@ -366,7 +479,7 @@
     <section id="aboutus" class="section section__aboutus">
       <div class="aboutus__top-box">
         <div class="aboutus__descr-wraper">
-            <h2 class="section-title">О нас</h2>
+            <h2 class="section-title aboutus__title">О нас</h2>
             <p class="aboutus__subtitle">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</p>
             <p class="aboutus__descr">Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен 
                 каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках 
@@ -382,32 +495,42 @@
       <div class="aboutus__bottom-box">
         <ul class="aboutus__list list-reset">
             <li class="aboutus_item">
+                <div class="aboutus__photo aboutus__photo_1"></div>
                 <p class="section-subtitle aboutus__name">Дмитрий Гутенберг</p>
                 <p class="aboutus__author-description">Эксперт (ну, почти) по всем вопросам (почти)</p>
             </li>
             <li class="aboutus_item">
+                <div class="aboutus__photo aboutus__photo_2"></div>
                 <p class="section-subtitle aboutus__name">Анна Васильева</p>
                 <p class="aboutus__author-description">Как я здесь оказалась? А главное — зачем?</p>
             </li>
             <li class="aboutus_item">
+                <div class="aboutus__photo aboutus__photo_3"></div>
                 <p class="section-subtitle aboutus__name">Пётр Дмитриевский</p>
                 <p class="aboutus__author-description">Господа! Внимание! Благодарю за внимание!</p>
             </li>
             <li class="aboutus_item">
+                <div class="aboutus__photo aboutus__photo_4"></div>
                 <p class="section-subtitle aboutus__name">Татьяна Флеганова</p>
                 <p class="aboutus__author-description">Одна я в пальто стою красивая, а вокруг…</p>
             </li>
         </ul>
       </div>
-      <form action="#">
-        <textarea class="aboutus__textarea" name="comment">Что скажете?</textarea>
+      <form class="aboutus__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <textarea class="aboutus__input aboutus__input_textarea" name="comment" placeholder="Что скажете?"></textarea>
         <div class="aboutus__inputs-wraper">
-            <input type="text" class="aboutus__unput"> Имя
-            <input type="text" class="aboutus__unput"> Email
+            <div class="aboutus__error-wraper">
+                <input type="text" name="name" class="aboutus__input" placeholder="Имя">
+                <span class="aboutus__error">Ошибка</span> 
+            </div>
+            <div class="aboutus__error-wraper">
+                <input type="email" name="email" class="aboutus__input" placeholder="Email">
+                <span class="aboutus__error">Ошибка</span>
+            </div>
         </div>
-       <button class="btn aboutus__btn">Отправить</button>
+       <button class="btn btn-purple aboutus__btn">Отправить</button>
        <label class="aboutus__checkbox-label" for="DPA">
-            <input id="DPA" type="checkbox" class="aboutus__unput aboutus__input_checkbox"> 
+            <input id="DPA" type="checkbox" class="aboutus__input_checkbox" name="DPA_checkbox"> 
             <span class="aboutus__dpa-text">Согласие на обработку персональных данных</span>
         </label>
       </form>
@@ -424,7 +547,7 @@
                     <a href="#" class="footer__sociallink footer__sociallink_youtube">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="social_footer" clip-path="url(#clip0_24531_5372)">
-                            <path id="Vector" d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498V6.498ZM10 15.5L16 12L10 8.5V15.5Z" fill="#D2D5DD"/>
+                            <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498V6.498ZM10 15.5L16 12L10 8.5V15.5Z" fill="#D2D5DD"/>
                             </g>
                             <defs><clippath id="clip0_24531_5372"><rect width="24" height="24" fill="white"/>
                             </clippath>
@@ -460,31 +583,31 @@
                 <nav class="nav">
                     <ul class="footer__list list-reset">
                         <li class="footer__item">
-                            <a href="#podcasts">Подкасты</a>
+                            <a class="footer__link" href="#podcasts">Подкасты</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#shows">Передачи</a>
+                            <a class="footer__link" href="#shows">Передачи</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#guests">Гости</a>
+                            <a class="footer__link" href="#guests">Гости</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#playlists">Плейлисты</a>
+                            <a class="footer__link" href="#playlists">Плейлисты</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#playlists">Сетка</a>
+                            <a class="footer__link" href="#">Сетка</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#aboutus">О нас</a>
+                            <a class="footer__link" href="#aboutus">О нас</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#playlists">Новости</a>
+                            <a class="footer__link" href="#">Новости</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#playlists">Блоги</a>
+                            <a class="footer__link" href="#">Блоги</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#playlists">Топы</a>
+                            <a class="footer__link" href="#p">Топы</a>
                         </li>
                     </ul>
                 </nav>
