@@ -1,0 +1,566 @@
+
+:root {
+    --gray-medium: #D2D5DD;
+    --gap: 30px;
+}
+
+/* 1710 !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+@media(max-width: 1710px) {
+
+    .container {
+      padding: 0 300px;
+    }
+
+    .aboutus__descr-wraper {
+        width: 70%;
+      }
+
+    .aboutus__image-wraper {
+        width: 30%;
+      }
+
+    .aboutus__spiral {
+        display: none;
+    }
+  }
+
+  /* 1500 !!!!!!!!!!!!!!!!!!!!!!!! */
+  
+  @media(max-width: 1500px) {
+  
+    .container {
+      padding: 0 200px;
+    }
+
+    .section__playlists {
+        flex-direction: column;
+    }
+
+    .playlists__card-link {
+        flex-direction: row;
+      }
+
+    .playlists__flag {
+        left: 0px;
+    }
+
+    /* change with var */
+
+    .playlists__item {
+        width: calc((100% - (var(--offsets) * var(--gap))) / var(--cardscount));
+    }
+
+    .container__aboutus {
+        --offsets: 1;
+      }
+
+      .aboutus_item {
+        min-width: 396px;
+      }
+
+      .aboutus__photo_1 {
+        background-position-x: -46px;
+      }
+      
+      .aboutus__photo_2 {
+        background-position-x: -62px;
+      }
+      
+      .aboutus__photo_3 {
+        background-position-x: -6px;
+      }
+      
+      .aboutus__photo_4 {
+        background-position-x: -11px;
+      }
+  }
+
+
+  /* 1300 !!!!!!!!!!!!!!!!!!!!!!!! */
+  
+  @media(max-width: 1300px) {
+  
+    .container {
+      padding: 0 100px;
+    }
+  }
+
+
+  /* 1100 !!!!!!!!!!!!!!!!!!!!!!!! */
+
+  @media(max-width: 1100px) {
+
+    .container__header {
+        padding: 0;
+    }
+  
+    .header__magnifier-wraper {
+        order: 0;
+        padding-right: 100px;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        row-gap: var(--gap);
+    }
+
+    .header__logo {
+        padding-left: 100px;
+        height: 14px;
+    }
+
+    .nav {
+        padding: 22px 100px;
+        width: 100%;
+        border-top: 1px solid var(--gray-medium);
+        border-bottom: 1px solid var(--gray-medium);
+    }
+
+    .header__list {
+        justify-content: space-between;
+    }
+
+    .section__playlists {
+        --offsets: 1;
+      }
+
+  }
+
+   /* 1022 !!!!!!!!!!!!!!!!!!!!!!!! */
+
+  @media(max-width: 1022px) {
+    
+    .header__link {
+        font-size: 16px;
+      }
+
+      .hero__right-box {
+        display: none;
+      }
+
+      .hero__descr {
+        margin-bottom: 20px;
+      }
+
+      .section__shows {
+        flex-direction: column;
+        padding-bottom: 0;
+      }
+
+      .shows__title-hidden {
+        display: block;
+      }
+
+      .shows__title {
+        display: none;
+      }
+
+      .shows__left-box {
+        order: 1;
+        align-self: center;
+      }
+
+      .shows__button-wraper {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        padding: 30px 0;
+        margin: 0 -150%;
+        justify-content: center;
+        border-top: 1px solid var(--gray-medium);
+      }
+
+      .shows__mic-image {
+        margin-bottom: 0;
+      }
+
+      .guests__item {
+        flex-direction: column;
+      }
+      
+      .guests__descr {
+        margin-bottom: var(--gap);
+      }
+
+      .section__shop {
+        flex-direction: column;
+      }
+
+      .aboutus__top-box {
+        flex-direction: column;
+      }
+
+      .aboutus__image-wraper {
+        width: 120%;
+        margin-bottom: var(--gap);
+        transform: translateX(-100px);
+      }
+
+      .aboutus__spiral {
+        width: 490px;
+        display: block;
+        height: 112px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        background-position-x: -21px;
+        transform: none;
+      }
+
+      .aboutus__star {
+        width: 112px;
+        height: 112px;
+      }
+
+      .aboutus__descr-wraper {
+        width: 100%;
+    }
+
+      .aboutus_item {
+        min-width: 240px;
+      }
+
+      .aboutus__photo_1 {
+        background-position-x: -132px;
+      }
+      
+      .aboutus__photo_2 {
+        background-position-x: -62px;
+      }
+      
+      .aboutus__photo_3 {
+        background-position-x: -69px;
+      }
+      
+      .aboutus__photo_4 {
+        background-position-x: -84px;
+      }
+
+      .aboutus__inputs-wraper {
+        flex-direction: column;
+      }
+
+      .footer__socialicon-wraper {
+        justify-content: center;
+      }
+
+      .footer__sociallink, .footer__sociallink svg {
+        width: 36px;
+        height: 36px;
+      }
+      
+
+      .footer__nav {
+        border: none;
+      }
+
+      .footer__top-box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+    }
+
+      /* 760 !!!!!!!!!!!!!!!!!!!!!!!! */
+
+  @media(max-width: 760px) {
+
+    .container {
+      padding: 0 32px;
+    }
+
+    .btn-purple {
+      font-size: 16px;
+    }
+
+    .section {
+      padding: 54px 0;
+    }
+
+    .section-title {
+      font-size: 24px;
+    }
+
+    .container__header {
+      padding: 0;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+
+    .header__logo {
+      padding-left: 32px;
+      height: 10px;
+    }
+
+    .header__magnifier-wraper {
+    padding-right: 32px;
+    }
+
+    .header__list {
+      gap: 24px;
+    }
+
+    .nav {
+      padding-left: 32px;
+      overflow: auto;
+      scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .section__hero {
+      padding-top: 40px;
+    }
+
+
+    .hero__left-box {
+      padding: 0;
+    }
+
+    .hero__title {
+      margin-bottom: 14px;
+      font-size: 32px;
+    }
+
+    .podcasts__item {
+      min-width: 256px;
+    }
+
+    .podcasts__card {
+      display: flex;
+      flex-direction: column;
+      padding: 26vw 16px 30px;
+      background-position: top;
+      background-size: 100%;
+    }
+
+    .podcasts__card_1 {
+      background-image: url("../pic/mobile-podcasts-red-roof-buidings.jpg");
+    }
+    .podcasts__card_2 {
+      background-image: url("../pic/mobile-podcasts-man-with-violin.jpg");
+    }
+    .podcasts__card_3 {
+      background-image: url("../pic/mobile-podcasts-crowd.jpg");
+    }
+    .podcasts__card_4 {
+      background-image: url("../pic/mobile-podcasts-woman-with-basket-on-the-head.jpg");
+    }
+    .podcasts__card_5 {
+      background-image: url("../pic/mobile-podcasts-rodin-thinker.jpg");
+    }
+    .podcasts__card_6 {
+      background-image: url("../pic/mobile-podcasts-rainbow-weel.jpg");
+    }
+    .podcasts__card_7 {
+      background-image: url("../pic/mobile-podcasts-wave.jpg");
+    }
+    .podcasts__card_8 {
+      background-image: url("../pic/mobile-podcasts-man-and-woman.jpg");
+    }
+
+    .podcasts__date {
+      top: 0;
+      bottom: auto;
+    }
+
+    .section__shows {
+      --offsets: 1;
+    }
+
+    .shows__title-hidden {
+      margin-bottom: 0;
+    }
+
+    .shows__descr {
+      margin: 0;
+      min-width: 166px;
+      font-size: 14px;
+    }
+
+    .shows__image {
+      min-height: 20vw;
+    }
+
+    .shows__descr-wraper {
+      padding: 10px;
+    }
+    .shows_cards-title {
+      font-size: 12px;
+    }
+
+    .shows__scheldure {
+      margin-bottom: 18px;
+      font-size: 9px;
+    }
+
+    .shows__link {
+      color: var(--purple-medium);
+      font-size: 12px;
+    }
+
+    .shows__link path {
+      fill: var(--purple-medium)
+    }
+
+    .shows__button-wraper {
+      padding-bottom: 54px;
+    }
+
+    .shows__descr {
+      width: 166px;
+      font-size: 14px;
+    }
+
+    .shows__archive-link {
+      max-width: 114px;
+      padding: 9px 31px;
+      margin-bottom: 0;
+    }
+
+    .guests__text {
+      margin-bottom: var(--gap);
+      font-size: 14px;
+    }
+    
+    .guests__foto {
+      margin-bottom: -18px;
+    }
+
+    .guests__name {
+      margin-bottom: 8px;
+    }
+
+    .guests__list {
+      gap: var(--gap);
+    }
+
+    .playlists_text {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .playlists__copyright {
+      font-size: 12px;
+    }
+
+    .playlists__card-link {
+      flex-direction: column;
+    }
+
+    .playlists__flag {
+      right: 0px;
+      left: auto;
+    }
+
+    .playlists__descr-wraper {
+      padding: 10px 10px;
+    }
+
+    .playlists__subtitle {
+      font-size: 12px;
+    }
+
+    .playlists__descr {
+      font-size: 9px;
+    }
+
+    .shop__picture {
+      min-width: 256px;
+      margin-bottom: 6px;
+    }
+
+    .shop__descr {
+      font-size: 14px;
+    }
+
+    .shop__price {
+      font-size: 24px;
+    }
+
+    .shop__link {
+      column-gap: 8px;
+      width: 100%;
+      padding: 17px 14px;
+      font-size: 16px;
+    }
+
+    .aboutus__title {
+      margin-bottom: 12px;
+    }
+
+    .aboutus__subtitle {
+      font-size: 14px;
+    }
+    .aboutus__descr {
+      font-size: 14px;
+    }
+
+    .aboutus__image-wraper {
+      display: none;
+    }
+
+    .aboutus_item {
+      min-width: 113px;
+    }
+
+    .aboutus__photo {
+      min-height: auto;
+      height: 113px;
+    }
+
+    .aboutus__name {
+      font-size: 14px;
+    }
+
+    .aboutus__author-description {
+      font-size: 12px;
+    }
+
+    .aboutus__input::placeholder {
+      font-size: 16px;
+    }
+
+    .aboutus__input {
+      font-size: 16px;
+    }
+
+    .aboutus__checkbox-label {
+      font-size: 9px;
+    }
+
+    .footer__nav {
+      padding: 32px 250px;
+      background-color: var(--dark);
+    }
+
+    .footer__list {
+      max-width: 445px;
+      columns: 2 auto;
+      column-gap: 78px;
+      -moz-column-gap: 78px;
+      -webkit-column-gap: 78px;
+    }
+
+    .footer__top-box {
+      padding-bottom: 10px;
+    }
+
+    .footer__bottom-box {
+      margin: 0 -40px;
+    }
+
+
+
+    
+    
+
+  
+
+  }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" href="pic/favicon-w.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -59,13 +60,7 @@
         </div>
         <div class="hero__right-box">
             <picture class="hero__picture">
-                <div class="hero__circle-big">
-                    <div class="hero__circle-medium">
-                        <div class="hero__circle-small">
-                            <img class="hero__mic" src="pic/mic-big.png" alt="microphone">
-                        </div>
-                    </div>
-                </div>
+                <img class="hero__mic" src="pic/microphone.png" alt="microphone">
             </picture>
         </div>
     </section>
@@ -143,15 +138,17 @@
     </section>
  </div>
 
-
  <div class="container">
     <section id="shows" class="section section__shows">
+        <h2 class="shows__title-hidden section-title">Передачи</h2>
         <div class="shows__left-box">
-            <h2 class="shows_title section-title">Передачи</h2>
+            <h2 class="shows__title section-title">Передачи</h2>
             <div class="shows__button-wraper">
                 <img class="shows__mic-image" aria-hidden="true" src="pic/mic.png" alt="mic">
-                <a href="#" class="shows__archive-link">Архив</a>
+                <div class="shows__btn-descr-wraper">
+                    <a href="#" class="shows__archive-link">Архив</a>
                 <p class="shows__descr">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)</p>
+                </div>
             </div>
         </div>
         <div class="shows__right-box">
@@ -306,11 +303,12 @@
             <span class="playlists__copyright">© 2021 l W-Wave</span>
             <span class="playlists_age-disclaimer">18+</span>
         </div>
-        <div class="platlists__right-box">
+        <div class="playlists__right-box">
             <ul class="playlists__list list-reset">
                 <li class="playlists__item hvr-grow-shadow">
                     <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-ploho.jpg" alt="groupe albume cover">
+                        <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-ploho.jpg" alt="groupe albume cover">
+                        </picture>
                         <span class="playlists__flag playlists__flag_rus"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Ploho</h3>
@@ -320,17 +318,19 @@
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                    <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-molchat-doma.jpg" alt="groupe albume cover">
+                       <picture class="platlists__picture"> <img class="playlists__img" src="pic/ls-molchat-doma.jpg" alt="groupe albume cover">
+                    </picture>
                         <span class="playlists__flag playlists__flag_rus"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Molchat Doma</h3>
-                        <p class="playlists__descr">Все песни</p>
+                        <p class="playlists__descr">Все песни</p>
                     </div>
                    </a>
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                     <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-motorama.jpg" alt="groupe albume cover">
+                        <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-motorama.jpg" alt="groupe albume cover">
+                        </picture>
                         <span class="playlists__flag playlists__flag_rus"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Motorama</h3>
@@ -340,37 +340,41 @@
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                     <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-human-tetris.jpg" alt="groupe albume cover">
+                       <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-human-tetris.jpg" alt="groupe albume cover">
+                    </picture>
                         <span class="playlists__flag playlists__flag_rus"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Human Tetris</h3>
-                        <p class="playlists__descr">3 последних альбома</p>
+                        <p class="playlists__descr">3 последних альбома</p>
                     </div>
                     </a>
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                     <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-buerak.jpg" alt="groupe albume cover">
+                       <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-buerak.jpg" alt="groupe albume cover">
+                    </picture>
                         <span class="playlists__flag playlists__flag_rus"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Буерак</h3>
-                        <p class="playlists__descr">Все EP</p>
+                        <p class="playlists__descr">Все EP</p>
                     </div>
                     </a>
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                    <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-july-days.jpg" alt="groupe albume cover">
+                        <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-july-days.jpg" alt="groupe albume cover">
+                        </picture>
                         <span class="playlists__flag playlists__flag_rus"></span>
                         <div class="playlists__descr-wraper">
-                        <h3 class="section-subtitle playlists__subtitle">Июльские Дни</h3>
+                        <h3 class="section-subtitle playlists__subtitle">ИюльскиеДни</h3>
                         <p class="playlists__descr">Альбом «Колокол»</p>
                     </div>
                    </a>
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                     <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-joy-division.jpg" alt="groupe albume cover">
+                        <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-joy-division.jpg" alt="groupe albume cover">
+                        </picture>
                         <span class="playlists__flag playlists__flag_eng"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Joy Division</h3>
@@ -380,17 +384,19 @@
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                     <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-the-cure.jpg" alt="groupe albume cover">
+                       <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-the-cure.jpg" alt="groupe albume cover">
+                    </picture>
                         <span class="playlists__flag playlists__flag_eng"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">The Cure</h3>
-                        <p class="playlists__descr">Лучшее за всё время</p>
+                        <p class="playlists__descr">Лучшее за всё время</p>
                     </div>
                     </a>
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                    <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-the-smiths.jpg" alt="groupe albume cover">
+                       <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-the-smiths.jpg" alt="groupe albume cover">
+                    </picture>
                         <span class="playlists__flag playlists__flag_eng"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">The Smiths</h3>
@@ -400,7 +406,8 @@
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                     <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-new-order.jpg" alt="groupe albume cover">
+                        <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-new-order.jpg" alt="groupe albume cover">
+                        </picture>
                         <span class="playlists__flag playlists__flag_eng"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">New Order</h3>
@@ -410,7 +417,8 @@
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                    <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-bouhaus.jpg" alt="groupe albume cover">
+                        <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-bouhaus.jpg" alt="groupe albume cover">
+                        </picture>
                         <span class="playlists__flag playlists__flag_eng"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Bauhaus</h3>
@@ -420,7 +428,8 @@
                 </li>
                 <li class="playlists__item hvr-grow-shadow">
                     <a class="playlists__card-link" href="#">
-                        <img class="playlists__img" src="pic/ls-gang-of-four.jpg" alt="groupe albume cover">
+                       <picture class="platlists__picture"><img class="playlists__img" src="pic/ls-gang-of-four.jpg" alt="groupe albume cover">
+                    </picture>
                         <span class="playlists__flag playlists__flag_eng"></span>
                         <div class="playlists__descr-wraper">
                         <h3 class="section-subtitle playlists__subtitle">Gang Of Four</h3>
@@ -436,7 +445,7 @@
  <div class="container container__shop">
     <section class="section section__shop">
         <picture class="shop__picture">
-            <img src="pic/radio-merch.png" alt="old-school radio">
+            <img class="shop__merch" src="pic/radio-merch.png" alt="old-school radio">
             <img class="shop__tag" src="pic/flower-tag.svg" alt="price tag">
         </picture>
         <div class="shop__right-box">
@@ -488,9 +497,10 @@
             </p>
         </div>
         <div class="aboutus__image-wraper">
-            <img class="aboutus__spiral" aria-hidden="true" src="pic/spiral-3.svg">
-            <img class="aboutus__star" aria-hidden="true" src="pic/12 finite star.svg">
+           <div class="aboutus__spiral"></div>
+            <div class="aboutus__star"></div>
         </div>
+       
       </div>
       <div class="aboutus__bottom-box">
         <ul class="aboutus__list list-reset">
@@ -576,11 +586,11 @@
                     </a>
                 </div>
             </div>
-            <div class="foter__middle-box">
+            <div class="footer__middle-box">
             </div>
     
             <div class="foter__right-box">
-                <nav class="nav">
+                <nav class="nav footer__nav">
                     <ul class="footer__list list-reset">
                         <li class="footer__item">
                             <a class="footer__link" href="#podcasts">Подкасты</a>
