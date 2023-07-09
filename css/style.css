@@ -83,6 +83,7 @@ body {
   max-width: 1920px;
   padding: 0 405px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .btn {
@@ -153,7 +154,7 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 92px 0;
 }
 
 .section-title {
@@ -183,13 +184,17 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 34px 0;
+  padding: 30px 0;
 
 }
 
+.header__logo {
+  margin-right: 80px;
+}
+
 .nav {
+  margin-right: auto;
   padding: 0;
 }
 
@@ -250,15 +255,14 @@ body {
   color: var(--dark);
   font-size: 60px;
   line-height: 100%;
-  word-spacing: 1;
 }
 
 .hero__radio {
+  margin-right: 9px;
   font-weight: 700;
 }
 
 .hero__wwave {
-  font-style: italic;
   font-weight: 400;
 }
 
@@ -283,6 +287,10 @@ body {
 .container__podcasts {
   background-color: var(--gray-bright);
 }
+.section__podcasts {
+  --offsets: 1;
+  --cardscount: calc(var(--offsets) + 1);
+}
 
 .podcasts__title {
   margin-bottom: 30px;
@@ -292,20 +300,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap);
-  justify-content: center;
 }
 
 .podcasts__item {
-  flex: 1;
-  min-width: 370px;
-  max-width: 540px
+  width: calc((100% - (var(--gap) * var(--offsets))) / var(--cardscount) );
 }
 
 .podcasts__card {
   position: relative;
   display: block;
-  padding: 40px 58px 40px 142px;
+  padding: 41px 10px 10px 142px;
   width: 100%;
+  min-height: 140px;
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: left;
@@ -348,6 +354,14 @@ body {
   font-size: 10px;
   font-weight: 400;
   background-color: var(--gray-bright);
+}
+
+.podcasts__descr-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .podcasts__time {
@@ -401,8 +415,8 @@ body {
 }
 
 .shows__mic-image {
-  width: 77px;
-  height: 105px;
+  width: 67px;
+  height: 83px;
   margin-bottom: 24px;
 }
 
@@ -414,8 +428,8 @@ body {
 .shows__archive-link {
   display: block;
   max-width: 160px;
-  padding: 17px 43px;
-  margin-bottom: 8px;
+  padding: 10px 43px;
+  margin-bottom: 12px;
   border: 2px solid var(--dark);
   border-radius: 77px;
   font-size: 16px;
@@ -446,11 +460,12 @@ body {
 }
 
 .shows__list {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: var(--gap);
+  /* width: 100%; */
+  padding-top: 13px;
 }
 
 .shows__item {
@@ -549,12 +564,13 @@ body {
 }
 
 .guests__text {
+  max-width: 800px;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   color: var(--gray-dark);
   font-size: 20px;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 180%;
 }
 
 .guests__list {
@@ -566,6 +582,10 @@ body {
 .guests__item {
   display: flex;
   gap: var(--gap);
+}
+
+.guests__foto {
+  max-width: 427px;
 }
 
 .guests__right-box {
@@ -588,7 +608,6 @@ body {
 }
 
 .guests__brodcast-link {
-  margin-top: auto;
   display: block;
   max-width: 160px;
   padding: 12px 5px;
@@ -627,6 +646,7 @@ body {
   display: flex;
   gap: var(--gap);
   justify-content: space-between;
+  padding: 97px 0;
 }
 
 .playlists__left-box {
@@ -635,10 +655,12 @@ body {
 }
 
 .playlists__title {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  margin-top: -7px;
 }
 
 .playlists_text {
+  min-width: 300px;
   margin: 0;
   color: var(--gray-dark);
   font-size: 16px;
@@ -675,8 +697,8 @@ body {
 }
 
 .playlists__list {
-  justify-content: flex-end;
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: var(--gap);
 }
@@ -698,7 +720,7 @@ body {
 
 .playlists__img {
   min-width: 112px;
-  max-width: 160px;
+  /* max-width: 160px; */
   width: 100%;
   height: 100%;
 }
@@ -728,7 +750,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 16px 10px;
+  padding: 14px 14px;
   border: 1px solid var(--gray-bright);
 }
 
@@ -765,10 +787,10 @@ body {
 
 .shop__tag {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 28.6%;
-  height: 28.6%;
+  top: -8px;
+  left: -14px;
+  width: 28%;
+  height: 28%;
 }
 
 .shop__right-box {
@@ -802,12 +824,16 @@ body {
   line-height: 180%;
 }
 
+.shop__descr:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
 .shop__descr:last-of-type {
   margin-bottom: 30px;
 }
 
 .shop__price {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
   color: #FFF;
   font-size: 30px;
   font-weight: 500;
@@ -866,6 +892,10 @@ fill: var(--low-dark)
   background-color: var(--dark);
 }
 
+.section__aboutus {
+  padding: 131px 0;
+}
+
 .aboutus__top-box {
   display: flex;
   gap: var(--gap);
@@ -877,6 +907,7 @@ fill: var(--low-dark)
 }
 
 .aboutus__title {
+  margin-bottom: 13px;
   color: #FFF;
 }
 
@@ -885,7 +916,7 @@ fill: var(--low-dark)
   color: var(--gray-dark);
   font-size: 20px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 165%;
 }
 
 .aboutus__descr {
@@ -911,14 +942,14 @@ fill: var(--low-dark)
 .aboutus__spiral {
   width: 290px;
   height: 160px;
-  margin-top: -50px;
-  margin-right: -60px;
+  margin-top: -49px;
+  margin-right: -53px;
   margin-left: -60px;
   background-image: url(../pic/horisontal-spiral.svg);
-  background-position-x: -437px;
+  background-position-x: -443px;
   background-repeat: no-repeat;
   background-size: cover;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 .aboutus__star {
@@ -933,48 +964,42 @@ fill: var(--low-dark)
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gap)
+  column-gap: var(--gap)
 }
 
 .aboutus_item {
   display: flex;
   flex-direction: column;
-  min-width: 240px;
-  max-width: calc((100% - (var(--offsets) * var(--gap))) / var(--cardscount) );
-  background-repeat: no-repeat;
+  width: calc((100% - (var(--offsets) * var(--gap))) / var(--cardscount) );
 }
 
-.aboutus__photo {
+.aboutus__picture {
   width: 100%;
-  min-height: 255px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  height: 100%;
+  margin-bottom: var(--gap);
+  overflow: hidden;
 }
 
-.aboutus__photo_1 {
-  background-image: url("../pic/aboutus-Gutenberg.jpg");
-  background-position-y: -54px;
-  background-position-x: -132px;
+.aboutus__img {
+  min-height: 258px;
+  object-fit: cover;
+  transform: scale(1.4);
 }
 
-.aboutus__photo_2 {
-  background-image: url("../pic/aboutus-Vasileva.jpg");
-  background-position-y: -89px;
-  background-position-x: -62px;
+.aboutus__img_gutenberg {
+  transform-origin: 71% 62%;
 }
 
-.aboutus__photo_3 {
-  background-image: url("../pic/aboutus-Dmitrievsky.jpg");
-  background-position-y: -63px;
-  background-position-x: -69px;
+.aboutus__img_vasileva {
+  transform-origin: 15% 75%;
 }
 
-.aboutus__photo_4 {
-  background-image: url("../pic/aboutus-Fleganova.jpg");
-  background-position-y: -7px;
-  background-position-x: -84px;
+.aboutus__img_dmitrievsky {
+  transform-origin: 34% 65%;
+}
+
+.aboutus__img_fleganova {
+  transform-origin: 62% 18%;
 }
 
 .aboutus__name {
@@ -988,7 +1013,7 @@ fill: var(--low-dark)
   color: var(--gray-dark);
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 150%;
 }
 
 
@@ -1017,7 +1042,7 @@ fill: var(--low-dark)
 .aboutus__input {
   width: 100%;
   padding: 24px 10px 24px 31px;
-  border-radius: 40px;
+  border-radius: 30px;
   border: 1px solid #FFF;
   background-color: var(--dark);
   color: #fff;
@@ -1090,6 +1115,7 @@ fill: var(--low-dark)
 }
 
 .aboutus__checkbox-label {
+  max-width: 300px;
   display: flex;
   align-items: center;
   color: #FFF;
@@ -1097,6 +1123,7 @@ fill: var(--low-dark)
   font-weight: 500;
   line-height: 100%;
   cursor: pointer;
+  transition: color .2s;
 }
 
 .aboutus__input_checkbox {
@@ -1108,13 +1135,34 @@ fill: var(--low-dark)
   width: 14px;
   border: 1px solid #fff;
   outline: none;
+  transition:  border .2s;
+}
+
+
+#DPA:focus {
+  border: 1px solid var(--purple-bright);
+}
+#DPA:focus + .aboutus__dpa-text {
+  color: var(--purple-bright);
+}
+.aboutus__checkbox-label:hover {
+  color: var(--purple-bright);
+}
+.aboutus__checkbox-label:hover #DPA {
+  border: 1px solid var(--purple-bright);
+}
+.aboutus__checkbox-label:active {
+  color: var(--purple-medium);
+}
+.aboutus__checkbox-label:active #DPA {
+  border: 1px solid var(--purple-medium);
 }
 
 .aboutus__input_checkbox:checked {
   background-image: url("../pic/checkbox.svg");
 }
 
-.aboutus__dpa-text {
+.aboutus__dpa-text .aboutus__checkbox-label {
   line-height: 14px;
 }
 
@@ -1128,7 +1176,8 @@ background-color: var(--low-dark);
 }
 
 .footer__top-box {
-  padding: 94px 0;
+  padding-top: 51px;
+  padding-bottom: 67px;
   display: flex;
   justify-content: space-between;
 }
@@ -1169,21 +1218,18 @@ background-color: var(--low-dark);
   fill: var(--purple-dark);
 }
 
+
 .footer__list {
   max-width: 445px;
   columns: 3 auto;
-  column-gap: 109px;
-  -moz-column-gap: 109px;
-  -webkit-column-gap: 109px;
+  column-gap: 119px;
+  -moz-column-gap: 119px;
+  -webkit-column-gap: 119px;
 }
 
 .footer__item {
   width: 100%;
   margin-bottom: 20px;
-}
-
-.footer__item:nth-of-type(3n) {
-  margin-bottom: 0;
 }
 
 .footer__link {
@@ -1206,6 +1252,7 @@ background-color: var(--low-dark);
 }
 
 .footer__bottom-box {
+  margin: 0 -50%;
   border-image-source: url("../pic/wave-line-long.svg");
   border-image-width: 10px;
   border-image-repeat: repeat;

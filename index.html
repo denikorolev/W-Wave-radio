@@ -45,7 +45,7 @@
     
 <main class="main">
 
- <div class="container">
+ <div class="container container__hero">
     <section class="section section__hero">
         <div class="hero__left-box">
             <h1 class="hero__title"> 
@@ -73,9 +73,11 @@
             <li class="podcasts__item hvr-grow-shadow">
                 <a href="#" class="podcasts__card podcasts__card_1 ">
                     <time class="podcasts__date" datetime="2023-06-14 15:43">14 июня</time>
-                    <span class="podcasts__time">15:43</span>
-                    <div class="podcasts__name">Европа. XIX век</div>
-                    <div class="podcasts__author">Дмитрий Гутенберг</div>
+                    <div class="podcasts__descr-wrapper">
+                        <span class="podcasts__time">15:43</span>
+                        <div class="podcasts__name">Европа. XIX век</div>
+                        <div class="podcasts__author">Дмитрий Гутенберг</div>
+                    </div>
                 </a>
             </li>
             <li class="podcasts__item hvr-grow-shadow">
@@ -505,22 +507,30 @@
       <div class="aboutus__bottom-box">
         <ul class="aboutus__list list-reset">
             <li class="aboutus_item">
-                <div class="aboutus__photo aboutus__photo_1"></div>
+                <picture class="aboutus__picture">
+                    <img src="pic/aboutus-Gutenberg.jpg" alt="Dmitry Gutenberg" class="aboutus__img aboutus__img_gutenberg"> 
+                </picture>
                 <p class="section-subtitle aboutus__name">Дмитрий Гутенберг</p>
                 <p class="aboutus__author-description">Эксперт (ну, почти) по всем вопросам (почти)</p>
             </li>
             <li class="aboutus_item">
-                <div class="aboutus__photo aboutus__photo_2"></div>
+                <pictur class="aboutus__picture">
+                    <img src="pic/aboutus-Vasileva.jpg" alt="Anna Vasil'eva" class="aboutus__img aboutus__img_vasileva">
+                </pictur>
                 <p class="section-subtitle aboutus__name">Анна Васильева</p>
                 <p class="aboutus__author-description">Как я здесь оказалась? А главное — зачем?</p>
             </li>
             <li class="aboutus_item">
-                <div class="aboutus__photo aboutus__photo_3"></div>
+                <picture class="aboutus__picture">
+                    <img src="pic/aboutus-Dmitrievsky.jpg" alt="Petr Dmitrievsky" class="aboutus__img aboutus__img_dmitrievsky">
+                </picture>
                 <p class="section-subtitle aboutus__name">Пётр Дмитриевский</p>
                 <p class="aboutus__author-description">Господа! Внимание! Благодарю за внимание!</p>
             </li>
             <li class="aboutus_item">
-                <div class="aboutus__photo aboutus__photo_4"></div>
+                <picture class="aboutus__picture">
+                    <img src="pic/aboutus-Fleganova.jpg" alt="Tat'yana Fleganova" class="aboutus__img aboutus__img_fleganova">
+                </picture>
                 <p class="section-subtitle aboutus__name">Татьяна Флеганова</p>
                 <p class="aboutus__author-description">Одна я в пальто стою красивая, а вокруг…</p>
             </li>
@@ -585,8 +595,6 @@
                             </svg>
                     </a>
                 </div>
-            </div>
-            <div class="footer__middle-box">
             </div>
     
             <div class="foter__right-box">
