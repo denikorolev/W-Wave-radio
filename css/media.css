@@ -600,6 +600,7 @@
     }
 
     .shows__item {
+      max-width: 180px;
       min-height: 149px;
     }
 
@@ -610,7 +611,7 @@
     }
 
     .shows__image {
-      min-height: 32%;
+      min-height: 65%;
     }
 
     .shows__descr-wraper {
@@ -824,7 +825,7 @@
     }
 
     .aboutus__input {
-      padding: 14px 10px 17px 24px;
+      padding: 18px 10px 17px 24px;
       font-size: 16px;
     }
 
@@ -843,7 +844,7 @@
     
     .footer__top-box {
       padding-bottom: 0;
-      padding-top: 60px;
+      padding-top: 54px;
     }
 
     .footer__nav {
@@ -871,15 +872,13 @@
     .footer__copyright {
       font-size: 12px;
     }
+  }
 
+  /* 425!!!!!!!!!!!!!!!!!!!!! */
 
-    
+  @media(max-width: 425px) {
 
-
-
-    
-    
-
-  
-
+    .shows__image {
+      min-height: 37%;
+    }
   }
