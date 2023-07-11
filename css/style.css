@@ -780,8 +780,9 @@ body {
 }
 
 .shop__picture {
-  margin: auto;
+  width: 264%;
   min-width: 397px;
+  margin: auto;
   position: relative;
 }
 
@@ -796,7 +797,6 @@ body {
 .shop__right-box {
   display: flex;
   flex-direction: column;
-  max-width: 445px;
 }
 
 .shop__title {
@@ -975,6 +975,7 @@ fill: var(--low-dark)
 
 .aboutus__picture {
   width: 100%;
+  max-width: 480px;
   height: 100%;
   margin-bottom: var(--gap);
   overflow: hidden;
