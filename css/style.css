@@ -205,6 +205,7 @@ body {
 
 .header__link {
   display: block;
+  min-width: 45px;
   color: var(--dark);
   font-size: 20px;
   font-weight: 400;
@@ -504,7 +505,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 16px;
+  padding: 19px 16px;
   height: 100%;
   border: 1px solid var(--gray-bright);
 }
@@ -559,7 +560,7 @@ body {
 }
 
 .guests__title {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   color: #fff;
 }
 
@@ -570,7 +571,7 @@ body {
   color: var(--gray-dark);
   font-size: 20px;
   font-weight: 400;
-  line-height: 180%;
+  line-height: 170%;
 }
 
 .guests__list {
@@ -581,7 +582,7 @@ body {
 
 .guests__item {
   display: flex;
-  gap: var(--gap);
+  gap: 35px;
 }
 
 .guests__foto {
@@ -595,6 +596,7 @@ body {
 }
 
 .guests__name {
+  margin-bottom: 10px;
   color: #fff;
 }
 
@@ -655,8 +657,7 @@ body {
 }
 
 .playlists__title {
-  margin-bottom: 10px;
-  margin-top: -7px;
+  margin-bottom: 8px;
 }
 
 .playlists_text {
@@ -825,7 +826,7 @@ body {
 }
 
 .shop__descr:not(:last-of-type) {
-  margin-bottom: 8px;
+  margin-bottom: 13px;
 }
 
 .shop__descr:last-of-type {
@@ -977,7 +978,7 @@ fill: var(--low-dark)
   width: 100%;
   max-width: 480px;
   height: 100%;
-  margin-bottom: var(--gap);
+  margin-bottom: 26px;
   overflow: hidden;
 }
 
